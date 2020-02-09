@@ -104,6 +104,9 @@ section .header {
   background-color: #000;
   border-radius: 4px;
 }
+.rotate {
+  transform: rotate(90deg);
+}
 /* ==========================================================================
 Animations
 ========================================================================== */
@@ -164,7 +167,6 @@ Waypoinsts
 ========================================================================== */
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9 {
   visibility: hidden;
-  transform: rotate(90deg)
 }
 .wp8, .wp9 {
   -webkit-animation-delay: 0.3s;
