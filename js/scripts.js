@@ -193,10 +193,10 @@ $(document).ready(function () {
             end: new Date('Dec 6, 2020 00:00'),
 
             // Event Address
-            address: 'Karl Strauss Brewin San Diego, CA',
+            address: 'Karl Strauss Brewing 9675 Scranton Rd, San Diego, CA 92121',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any questions or issues, please contact Mike or Fawn at 215-208-0571."
+            description: "We can't wait to see you on our big day. For any questions or issues, please contact Mike (215-208-0571) or Fawn (704-904-0766)."
         }
     });
 
@@ -210,11 +210,10 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== 'b6c4cdbc5b273f9d680b07ec0ab3dc63') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbwe2QeDe_WGbYH8KI5wvpkDkebeNOyWyC25iz76fw/exec', data)
                 .done(function (data) {
                     console.log(data);
                     $('#alert-wrapper').html('');
