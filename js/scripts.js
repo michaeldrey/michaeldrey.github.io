@@ -207,7 +207,7 @@ $(document).ready(function () {
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
         var data = $(this).serialize();
-
+        data.async= true;
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
         //b15cc4fb237532b62a0491ccd19a4c42 real code
         if (MD5($('#invite_code').val()) !== 'b6c4cdbc5b273f9d680b07ec0ab3dc63') {
