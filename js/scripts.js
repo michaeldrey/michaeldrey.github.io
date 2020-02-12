@@ -216,10 +216,8 @@ $(document).ready(function () {
             $.post('https://script.google.com/macros/s/AKfycbwe2QeDe_WGbYH8KI5wvpkDkebeNOyWyC25iz76fw/exec', data)
                 .done(function (data) {
                     console.log(data);
-                    $('#alert-wrapper').html(alert_markup('success', '<strong> Thank you! </strong> Your information has been saved!'));
-                    $('#rsvpButton').attr("data-toggle", 'modal')
-                    $('#rsvpButton').attr("disable", 'true')  //data-target="#dc-modal"
-                    //$('#rsvpButton').html('Add to calendar')
+                    $('#rsvpButton').attr("disabled", true)
+                    $('#alert-wrapper').html('');
                     $('#rsvp-modal').modal('show');
                 })
                 .fail(function (data) {
