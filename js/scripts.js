@@ -217,6 +217,7 @@ $(document).ready(function () {
                 .done(function (data) {
                     console.log(data);
                     $('#rsvpButton').attr("disabled", true)
+                    $('#rsvpButton').html('Thank you!!')
                     $('#alert-wrapper').html('');
                     $('#rsvp-modal').modal('show');
                 })
