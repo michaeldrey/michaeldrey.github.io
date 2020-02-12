@@ -265,13 +265,13 @@ $('#yesCheck').click(function () {
     $('#ifYes').attr("display", 'block')
 });
 
-// function yesnoCheck() {
-//     if (document.getElementById('yesCheck').checked) {
-//         document.getElementById('ifYes').style.display = 'block';
-//     }
-//     else document.getElementById('ifYes').style.display = 'none';
+function yesnoCheck() {
+    if (document.getElementById('question').checked) {
+        document.getElementById('ifYes').style.display = 'block';
+    }
+    else document.getElementById('ifYes').style.display = 'none';
 
-// }
+}
 
 
 // alert_markup
