@@ -260,6 +260,20 @@ function initMap() {
 //     });
 // }
 
+//Radio buttons show and hide function
+$('#yesCheck').click(function () {
+    $('#ifYes').attr("display", 'block')
+});
+
+// function yesnoCheck() {
+//     if (document.getElementById('yesCheck').checked) {
+//         document.getElementById('ifYes').style.display = 'block';
+//     }
+//     else document.getElementById('ifYes').style.display = 'none';
+
+// }
+
+
 // alert_markup
 function alert_markup(alert_type, msg) {
     return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
