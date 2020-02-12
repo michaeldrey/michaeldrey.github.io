@@ -218,9 +218,9 @@ $(document).ready(function () {
                     console.log(data);
                     $('#alert-wrapper').html(alert_markup('success', '<strong> Thank you! </strong> Your information has been saved!'));
                     $('#rsvpButton').attr("data-toggle", 'modal')
-                    $('#rsvpButton').attr("data-target", '#rsvp-modal')  //data-target="#dc-modal"
-                    $('#rsvpButton').html('Add to calendar')
-                    //$('#rsvp-modal').modal('show');
+                    //$('#rsvpButton').attr("data-target", '#rsvp-modal')  //data-target="#dc-modal"
+                    //$('#rsvpButton').html('Add to calendar')
+                    $('#rsvp-modal').modal('show');
                 })
                 .fail(function (data) {
                     console.log(data);
