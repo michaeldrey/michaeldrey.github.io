@@ -794,6 +794,11 @@ Google map
 /* ==========================================================================
 Radio Buttons
 ========================================================================== */
+.container {
+  border: none;
+  float: left;
+}
+
 input[type=radio].with-font,
 input[type=checkbox].with-font {
     border: 0;
