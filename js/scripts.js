@@ -267,12 +267,14 @@ function initMap() {
 
 
 function ShowHideYesDiv() {
+    dvTextNo.style.display = "none"
     var chkYes = document.getElementById("chkYes");
     var dvTextYes = document.getElementById("dvTextYes");
     dvTextYes.style.display = chkYes.checked ? "block" : "none";
 }
 
 function ShowHideNoDiv() {
+    dvTextYes.style.display = "none"
     var chkNo = document.getElementById("chkNo");
     var dvTextNo = document.getElementById("dvTextNo");
     dvTextNo.style.display = chkNo.checked ? "block" : "none";
