@@ -261,9 +261,10 @@ function initMap() {
 // }
 
 //Radio buttons show and hide function
-$('#yesCheck').click(function () {
-    $('#ifYes').attr("display", 'block')
+$('#chkYes').onClick(function () {
+    $('#dvTextYes').addClass('animated bounceInDown');
 });
+
 
 function ShowHideYesDiv() {
     var chkYes = document.getElementById("chkYes");
