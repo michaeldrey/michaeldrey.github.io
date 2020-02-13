@@ -261,15 +261,21 @@ function initMap() {
 // }
 
 //Radio buttons show and hide function
-$('#chkYes').onClick(function () {
-    $('#dvTextYes').addClass('animated bounceInDown');
-});
+// $('#chkYes').onClick(function () {
+//     $('#dvTextYes').addClass('animated bounceInDown');
+// });
 
 
 function ShowHideYesDiv() {
     var chkYes = document.getElementById("chkYes");
     var dvTextYes = document.getElementById("dvTextYes");
     dvTextYes.style.display = chkYes.checked ? "block" : "none";
+}
+
+function ShowHideYesDiv() {
+    var chkNo = document.getElementById("chkNo");
+    var dvTextNo = document.getElementById("dvTextNo");
+    dvTextNo.style.display = chkNo.checked ? "block" : "none";
 }
 
 // alert_markup

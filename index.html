@@ -420,6 +420,7 @@
                             <label for="chkNo">Nope.</label>
                           </div>
                     </div>
+
                 <div id="dvTextYes" style="display:none">
                     <form id="rsvp-form" class="rsvp-form"
                         action=""
@@ -466,6 +467,38 @@
                         </button>
                     </form>
                 </div>
+
+                <div id="dvTextNo" style="display:none">
+                    <form id="rsvp-form" class="rsvp-form"
+                        action=""
+                        method="POST">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-user"></i><input name="name" class=""
+                                                                        placeholder="Your full name"
+                                                                        required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                                                        class="" min="0"
+                                                                        placeholder="Invite code"
+                                                                        required>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row">
+                            <div class="col-md-12" id="alert-wrapper"></div>
+                        </div>
+                        <button class="btn-fill rsvp-btn" id="rsvpButton">
+                            I'm about this jawn!
+                        </button>
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>
