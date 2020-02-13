@@ -217,6 +217,7 @@ $(document).ready(function () {
                 .done(function (data) {
                     console.log(data);
                     $('#rsvpButton').attr("disabled", true)
+                    $('#rsvpButton1').attr("disabled", true)
                     $('#alert-wrapper').html('');
                     $('#rsvp-modal').modal('show');
                 })
@@ -240,6 +241,7 @@ $(document).ready(function () {
                 .done(function (data) {
                     console.log(data);
                     $('#rsvpButton1').attr("disabled", true)
+                    $('#rsvpButton').attr("disabled", true)
                     $('#alert-wrapper1').html('');
                     $('#rsvp-modal').modal('show');
                 })
