@@ -267,6 +267,7 @@ function initMap() {
 
 
 function ShowHideYesDiv() {
+    var dvTextNo = document.getElementById("dvTextNo");
     dvTextNo.style.display = "none"
     var chkYes = document.getElementById("chkYes");
     var dvTextYes = document.getElementById("dvTextYes");
@@ -274,6 +275,7 @@ function ShowHideYesDiv() {
 }
 
 function ShowHideNoDiv() {
+    var dvTextYes = document.getElementById("dvTextYes");
     dvTextYes.style.display = "none"
     var chkNo = document.getElementById("chkNo");
     var dvTextNo = document.getElementById("dvTextNo");
