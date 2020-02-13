@@ -272,7 +272,7 @@ function ShowHideYesDiv() {
     dvTextYes.style.display = chkYes.checked ? "block" : "none";
 }
 
-function ShowHideYesDiv() {
+function ShowHideNoDiv() {
     var chkNo = document.getElementById("chkNo");
     var dvTextNo = document.getElementById("dvTextNo");
     dvTextNo.style.display = chkNo.checked ? "block" : "none";
