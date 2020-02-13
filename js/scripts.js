@@ -239,7 +239,7 @@ $(document).ready(function () {
             $.post('https://script.google.com/macros/s/AKfycbwe2QeDe_WGbYH8KI5wvpkDkebeNOyWyC25iz76fw/exec', data)
                 .done(function (data) {
                     console.log(data);
-                    $('#rsvpButton').attr("disabled", true)
+                    $('#rsvpButton1').attr("disabled", true)
                     $('#alert-wrapper').html('');
                     $('#rsvp-modal').modal('show');
                 })
