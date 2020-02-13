@@ -231,6 +231,7 @@ $(document).ready(function () {
     $('#decline-form').on('submit', function (e) {
         e.preventDefault();
         var data = $(this).serialize();
+        formData.append("Test Append");
         data.async= true;
         $('#alert-wrapper1').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
         // real code b6c4cdbc5b273f9d680b07ec0ab3dc63
