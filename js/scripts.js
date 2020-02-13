@@ -244,7 +244,7 @@ $(document).ready(function () {
                     $('#rsvpButton1').attr("disabled", true)
                     $('#rsvpButton').attr("disabled", true)
                     $('#alert-wrapper1').html('');
-                    $('#rsvp-modal').modal('show');
+                    $('#decline-modal').modal('show');
                 })
                 .fail(function (data) {
                     console.log(data);
