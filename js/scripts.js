@@ -265,14 +265,11 @@ $('#yesCheck').click(function () {
     $('#ifYes').attr("display", 'block')
 });
 
-function yesnoCheck() {
-    if (document.getElementById('question').checked) {
-        document.getElementById('ifYes').style.display = 'block';
-    }
-    else document.getElementById('ifYes').style.display = 'none';
-
+function ShowHideDiv() {
+    var chkYes = document.getElementById("chkYes");
+    var dvTextYes = document.getElementById("dvTextYes");
+    dvTextYes.style.display = chkYes.checked ? "block" : "none";
 }
-
 
 // alert_markup
 function alert_markup(alert_type, msg) {
