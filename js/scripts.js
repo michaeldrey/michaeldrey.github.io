@@ -265,7 +265,7 @@ $('#yesCheck').click(function () {
     $('#ifYes').attr("display", 'block')
 });
 
-function ShowHideDiv() {
+function ShowHideYesDiv() {
     var chkYes = document.getElementById("chkYes");
     var dvTextYes = document.getElementById("dvTextYes");
     dvTextYes.style.display = chkYes.checked ? "block" : "none";
