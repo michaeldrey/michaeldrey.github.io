@@ -263,12 +263,24 @@
         width: 25px;
         height: 25px;
         top: 10px;
-        right: 10px; }
+        right: 10px; 
+        padding-bottom: 5px;
+    }
 
     #map-content-wrapper {
         margin-bottom: 0;
     }
     
+    #rdbuttons{
+        position: relative;  
+        text-transform: uppercase;  
+    }
+
+    #rdbuttonyes{
+        border: none;
+        float: none;
+    }
+
     footer ul.footer-group {
         border-top: none;
     }
@@ -347,6 +359,10 @@
 
     .features {
         padding-bottom: 0;
+    }
+
+    #rdbuttons{
+        position: relative;    
     }
 
     .down-arrow {
