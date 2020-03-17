@@ -569,6 +569,13 @@ Features-stack
     text-transform: lowercase;
     color: $txt-primary;
   }
+
+  .location {
+    font-size: 13px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: $txt-primary;
+  }
 }
 
 /* ==========================================================================
@@ -797,6 +804,7 @@ Radio Buttons
 .rdcontainer {
   border: none;
   float: left;
+  text-align: left;
 }
 
 
